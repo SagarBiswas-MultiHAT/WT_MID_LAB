@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(90deg, #2563eb 60%, #1e40af 100%);
+    font-family: 'Segoe UI';
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    background: #fff;
+    width: 520px;
+    margin: 24px auto;
+    padding: 28px;
+    border-radius: 12px;
+    border: 2px solid #000000;
+}
+
+h2 {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    color: #2d3a4a;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    padding: 10px 12px;
+    border: 1.5px solid #bfc9d9;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f9fbfd;
+    outline: none;
+    /* outline: none; used to remove the default focus outline */
+}
+
+input.valid,
+select.valid {
+    border-color: #10b981;
+    background: #f0fdf4;
+}
+
+input.invalid,
+select.invalid {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+/* Focused field highlight for JS-based focus highlighting */
+input.focused,
+select.focused {
+    background: #c1dcff;
+    box-shadow: 0 0 0 2px #15ff00;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #2563eb 60%, #1e40af 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #1e40af 60%, #2563eb 100%);
+}
+
+/* for the checkBox */
+.form-group.terms {
+    /* Set flex-direction to row so the checkbox and its label appear side by side horizontally instead of stacked vertically */
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}

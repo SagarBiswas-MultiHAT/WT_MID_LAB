@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="../CSS/task_3_style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="jobAppForm" novalidate>
+            <h2>╰(..:: Job Application ::..)╯</h2>
+            <!-- for the Name input -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <!-- for the Email input -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- for the Phone input -->
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" required maxlength="11">
+            </div>
+            <!-- for the Password input -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- for the Experience Level selection -->
+            <div class="form-group">
+                <label for="experience">Experience Level</label>
+                <select id="experience" name="experience" required style="margin-top:10px;">
+                    <option value="">Select Experience Level</option>
+                    <option value="Entry">Entry Level (0-2 years)</option>
+                    <option value="Mid">Mid Level (3-5 years)</option>
+                    <option value="Senior">Senior Level (6-10 years)</option>
+                    <option value="Executive">Executive (10+ years)</option>
+                </select>
+            </div>
+            <!-- for the Expected Salary input -->
+            <div class="form-group">
+                <label for="salary">Expected Salary</label>
+                <input type="number" id="salary" name="salary" required min="1">
+            </div>
+            <!-- for the Terms & conditions checkbox -->
+            <div class="form-group terms"> 
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms & conditions</label>
+            </div>
+            <button type="submit">Apply</button>
+        </form>
+    </div>
+    <script src="../JS/task_3_valid.js"></script>
+</body>
+</html>
