@@ -78,13 +78,18 @@ Mid Lab Task 3/
 
 ### Reference
 
-**Main Form View**
+*Main Form View*
+
 ![Main Form View](https://i.postimg.cc/BZRx959W/Screenshot-2025-08-05-234118.png)
 
-**Validation Failed States**
+
+*Validation Failed States*
+
 ![Validation Failed States](https://i.postimg.cc/PJCNV7rL/Screenshot-2025-08-05-234231.png)
 
+
 *Focus Highlighting*
+
 ![Focus Highlighting](https://i.postimg.cc/QtbpZv30/Screenshot-2025-08-05-234557.png)
 
 ---
